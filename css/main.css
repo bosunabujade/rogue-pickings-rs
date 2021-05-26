@@ -94,7 +94,7 @@ header nav ul li a{
 	display: flex;
 justify-content: center;
 align-items: center;
-flex-flow: column wrap;
+flex-flow: row wrap;
 }
 
 .main-image {
@@ -123,19 +123,18 @@ flex-flow: column wrap;
 .section-one,
 .section-two,
 .section-three {
-	height: auto;
 	border-top: 1px solid #eee;
 	width: 100%;
 }
 
 .section-one h3 {
-	padding: 10px 30px;
+	padding: 10px 0;
 
 }
 
 .section-two h3,
 .section-three h3 {
-	padding: 10px 30px;
+	padding: 10px 0;
 }
 
 .menu {
@@ -143,7 +142,7 @@ flex-flow: column wrap;
 	padding: 0;
 }
 .menu li {
-	padding: 10px 30px;
+	padding: 10px 0;
 	color:#77a466;
 }
 
@@ -151,11 +150,15 @@ flex-flow: column wrap;
 	color: #333;
 	font-size: 1em;
 	line-height: 21px;
+	padding-left: 0;
+	padding-right: 0;
+
 }
 
 .address {
 	font-size: 1em;
 	line-height: 24px;
+	padding: 0;
 }
 
 /*The widths are in a percentage!*/
@@ -199,7 +202,17 @@ footer span {
 		padding: 10px 0;
 
 	}
-
+	.address {
+		padding: 10px 30px;
+	}
+  .review {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.section-two h3,
+	.section-three h3 {
+		padding: 10px 30px;
+	}
 }
 @media only screen and (min-width: 1200px) {
 	header {
@@ -210,7 +223,7 @@ footer span {
 
 	header nav ul li {
 		padding: 10px 10px;
-		width: 50%;
+		width: 40%;
 		justify-content: flex-end;
 		align-items: center;
 		display: inline;
